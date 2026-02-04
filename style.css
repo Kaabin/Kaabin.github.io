@@ -37,7 +37,7 @@ p {
   position: relative; /* allows layering */
   min-height: 50vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
    padding-top: 250px;
 }
