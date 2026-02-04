@@ -1,11 +1,13 @@
-/* General & Fonts */
+/* =========================
+   GLOBAL
+========================= */
+
 body {
   font-family: 'Roboto', Arial, sans-serif;
   background: #fafafa;
   color: #222;
   margin: 0;
   padding: 0;
-  text-align: justify;
 }
 
 h1, h2 {
@@ -13,38 +15,41 @@ h1, h2 {
   font-weight: 700;
 }
 
-/* Gradient text for headings */
+p {
+  text-align: justify;
+}
+
+/* =========================
+   GRADIENT TITLE
+========================= */
+
 .gradient-text {
   background: linear-gradient(90deg, #444, #888);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin: 
+}
 
+/* =========================
+   HEADER
+========================= */
 
-
-
-
-/* Header */
 .site-header {
-  background-image: url("images/header.jpeg");
-  background-size: contain;
+  background-image: url("images/header.jpeg"); /* Kabin logo */
   background-repeat: no-repeat;
   background-position: center top;
-  min-height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-size: 220px auto; /* SAFE: never covers portrait */
+  padding-top: 260px; /* creates space BELOW logo */
 }
 
 .header-content {
   text-align: center;
-  padding: 60px 20px;
-  color: #222;
+  padding: 40px 20px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* Portrait — ALWAYS visible */
 .header-portrait {
   width: 180px;
   height: 180px;
@@ -53,16 +58,21 @@ h1, h2 {
   border: 4px solid #f0f0f0;
   margin-bottom: 20px;
   filter: grayscale(100%);
+  background: #fff; /* prevents blending issues */
 }
 
 @media (max-width: 768px) {
+  .site-header {
+    background-size: 180px auto;
+    padding-top: 220px;
+  }
+
   .header-portrait {
     width: 140px;
     height: 140px;
   }
 }
 
-/* Header text */
 .header-content h1 {
   margin: 0;
   font-size: 3rem;
@@ -74,49 +84,39 @@ h1, h2 {
   font-weight: 400;
 }
 
+/* =========================
+   SECTIONS
+========================= */
 
-
-
-
-
-
-
-
-
-
-
-  
-
-/* Sections */
 section {
-  max-width: 800px;
-  margin: 40px auto;
+  max-width: 820px;
+  margin: 60px auto;
   padding: 0 20px;
 }
 
 h2 {
   border-bottom: 1px solid #ddd;
   padding-bottom: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
-/* Album note */
-.album-note {
-  font-size: 0.9rem;
-  font-style: italic;
-  color: #555;
-  text-align: center;
-  margin-bottom: 20px;
+/* Clear visual separation */
+.bio {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #e0e0e0;
 }
 
-/* Videos */
+/* =========================
+   VIDEOS
+========================= */
+
 .video-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 0;
 }
 
 .video-item {
@@ -124,31 +124,40 @@ h2 {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.video-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
-}
-
-.video-item video, .video-item iframe {
+.video-item video,
+.video-item iframe {
   width: 100%;
   display: block;
 }
 
 .video-title {
-  margin: 10px 0;
+  margin: 12px 0 6px;
   font-weight: 500;
   font-size: 1rem;
   text-align: center;
-  color: #222;
 }
 
-/* Contact / CV */
+.album-note {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #555;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+/* =========================
+   LINKS & CV
+========================= */
+
 .contact {
   text-align: center;
-  padding: 40px 20px;
+  padding: 50px 20px;
+}
+
+.contact p {
+  text-align: center;
 }
 
 .cv-button {
@@ -159,47 +168,42 @@ h2 {
   border-radius: 6px;
   font-weight: 500;
   text-decoration: none;
-  margin-right: 15px;
-  transition: background 0.3s;
+  margin: 10px;
 }
 
 .cv-button:hover {
   background: #155ab6;
 }
 
-.social-link {
-  margin: 0 8px;
-  font-size: 1.4rem;
+/* Social links — IMAGE BASED (SAFE) */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
   color: #333;
-  transition: color 0.3s;
+  text-decoration: none;
+  font-weight: 500;
 }
 
-.social-link:hover {
-  color: #1a73e8;
+.social-links img {
+  width: 20px;
+  height: 20px;
 }
 
-/* Footer */
+/* =========================
+   FOOTER
+========================= */
+
 footer {
   text-align: center;
   padding: 40px;
   font-size: 0.9rem;
   color: #777;
 }
-
-/* Responsive */
-@media (max-width: 768px) {
-  .header-portrait {
-    width: 140px;
-    height: 140px;
-  }
-
-  .header-content h1 {
-    font-size: 2.5rem;
-  }
-
-  .video-grid {
-    gap: 20px;
-  }
-}
-
-
