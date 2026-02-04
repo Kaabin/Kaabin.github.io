@@ -39,6 +39,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+   padding-top: 250px;
 }
 
 .site-header::before {
@@ -48,7 +49,7 @@ p {
   background-image: url("images/header.jpeg"); /* Kaabin logo */
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 420px auto;
+  background-size: 480px auto;
   z-index: 1; /* background behind content */
 }
 
@@ -63,8 +64,8 @@ p {
 }
 
 .header-portrait {
-  width: 180px;
-  height: 180px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid #f0f0f0;
