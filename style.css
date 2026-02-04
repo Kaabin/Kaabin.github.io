@@ -27,6 +27,9 @@ p {
   background: linear-gradient(90deg, #444, #888);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  
+  text-align: center;
+
 }
 
 /* =========================
@@ -34,7 +37,7 @@ p {
 ========================= */
 .site-header {
   position: relative;
-  /* min-height: 500px; /* enough vertical space for logo + portrait + text */
+  /* min-height: 400px; /* enough vertical space for logo + portrait + text */
   display: flex;
   align-items: flex-start; /* aligns content from the top */
   justify-content: center;
