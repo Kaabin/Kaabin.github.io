@@ -79,13 +79,13 @@ p {
 .subtitle {
   color: #555;
   margin-top: 10px;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
   .site-header {
-    min-height: 400px;
+   /* min-height: 400px;
     padding-top: 180px;
   }
 
