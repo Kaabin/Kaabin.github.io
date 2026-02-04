@@ -18,10 +18,7 @@ h1, h2 {
 }
 
 /* Header */
-.site-header {
-  text-align: center;
-  padding: 60px 20px;
-}
+
 .site-header {
   background-image: url("images/header.jpeg");
   background-size: contain;
