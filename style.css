@@ -34,7 +34,7 @@ p {
 ========================= */
 .site-header {
   position: relative;
-  min-height: 500px; /* enough vertical space for logo + portrait + text */
+  /* min-height: 500px; /* enough vertical space for logo + portrait + text */
   display: flex;
   align-items: flex-start; /* aligns content from the top */
   justify-content: center;
@@ -48,7 +48,7 @@ p {
   background-image: url("images/header.jpeg"); /* Kaabin logo */
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 400px auto; /* larger than portrait */
+  background-size: 500px auto; /* larger than portrait */
   z-index: 1; /* ensures header image is behind content */
 }
 
