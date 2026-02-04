@@ -30,16 +30,15 @@ p {
 }
 
 /* =========================
-   HEADER WITH OVERLAY FIX
+   HEADER WITH OVERLAY
 ========================= */
-
 .site-header {
-  position: relative; /* allows layering */
-  min-height: 50vh;
+  position: relative;
+  min-height: 500px; /* enough vertical space for logo + portrait + text */
   display: flex;
-  align-items: flex-start;
+  align-items: flex-start; /* aligns content from the top */
   justify-content: center;
-   padding-top: 250px;
+  padding-top: 220px; /* pushes portrait/text onto the logo */
 }
 
 .site-header::before {
@@ -49,46 +48,63 @@ p {
   background-image: url("images/header.jpeg"); /* Kaabin logo */
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 480px auto;
-  z-index: 1; /* background behind content */
+  background-size: 400px auto; /* larger than portrait */
+  z-index: 1; /* ensures header image is behind content */
 }
 
 .header-content {
   position: relative;
-  z-index: 2; /* content above header image */
+  z-index: 2; /* content appears above header image */
   text-align: center;
-  padding: 40px 20px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .header-portrait {
-  width: 160px;
-  height: 160px;
+  width: 180px;  /* smaller than header image */
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid #f0f0f0;
   margin-bottom: 20px;
   filter: grayscale(100%);
-  background: #fff; /* prevents blending issues */
-}
-
-@media (max-width: 768px) {
-  .site-header::before {
-    background-size: 180px auto;
-  }
-
-  .header-portrait {
-    width: 140px;
-    height: 140px;
-  }
 }
 
 .header-content h1 {
   margin: 0;
   font-size: 3rem;
 }
+
+.subtitle {
+  color: #555;
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .site-header {
+    min-height: 400px;
+    padding-top: 180px;
+  }
+
+  .site-header::before {
+    background-size: 280px auto; /* adjust for mobile */
+  }
+
+  .header-portrait {
+    width: 140px;
+    height: 140px;
+  }
+
+  .header-content h1 {
+    font-size: 2.2rem;
+  }
+}
+---------
+
+
 
 .subtitle {
   color: #555;
