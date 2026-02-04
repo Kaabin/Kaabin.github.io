@@ -1,13 +1,13 @@
 /* General styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   background: #fafafa;
   color: #222;
   margin: 0;
   padding: 0;
 }
 
-/* Header with background + portrait */
+/* Header */
 .site-header {
   background-image: url("images/header.jpeg");
   background-size: cover;
@@ -19,7 +19,7 @@ body {
 }
 
 .header-content {
-  background: rgba(0, 0, 0, 0.45);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0.25));
   padding: 50px 60px;
   text-align: center;
   color: white;
@@ -40,8 +40,9 @@ body {
 }
 
 .subtitle {
-  color: #ddd;
+  color: #f0f0f0;
   margin-top: 10px;
+  font-weight: 400;
 }
 
 /* Sections */
@@ -54,15 +55,16 @@ section {
 h2 {
   border-bottom: 1px solid #ddd;
   padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 
-/* Bio section */
+/* Bio */
 .bio {
   line-height: 1.6;
   font-size: 1.05rem;
 }
 
-/* Videos section - grid layout */
+/* Videos grid with hover effect */
 .video-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -72,19 +74,48 @@ h2 {
   padding: 20px;
 }
 
+.video-item {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s forwards;
+}
+
+.video-item:nth-child(1) { animation-delay: 0.2s; }
+.video-item:nth-child(2) { animation-delay: 0.4s; }
+.video-item:nth-child(3) { animation-delay: 0.6s; }
+
+.video-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
 .video-item video {
   width: 100%;
-  border-radius: 8px;
+  display: block;
 }
 
 .video-title {
-  margin-top: 8px;
+  margin: 10px 0;
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: 1rem;
   text-align: center;
+  color: #222;
 }
 
-/* Contact section */
+/* Fade-in animation */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Contact */
 .contact {
   text-align: center;
   padding: 40px 20px;
@@ -109,7 +140,7 @@ footer {
   color: #777;
 }
 
-/* Responsive adjustments */
+/* Responsive */
 @media (max-width: 768px) {
   .header-content {
     padding: 30px 25px;
@@ -122,5 +153,9 @@ footer {
 
   .header-content h1 {
     font-size: 2rem;
+  }
+
+  .video-grid {
+    gap: 20px;
   }
 }
