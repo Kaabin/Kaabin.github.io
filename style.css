@@ -209,12 +209,7 @@ h2 {
 }
 
 /* Social links — IMAGE BASED */
-/*  .social-links {
-  display: flex;
-  justify-content: center;
-  gap: 18px;
-  margin-top: 20px;
-}*/
+
 
    .social-links {
   display: flex;
@@ -247,7 +242,18 @@ h2 {
     width: 16px;
     height: 16px;
     max-width: 16px;
+   object-fit: contain;
   }
+   .social-links img[src*="instagram"] {
+  width: 16px;
+}
+   .social-links img[src*="applemusic"] {
+  width: 16px;
+   }
+
+   .social-links img[src*="soundcloud"] {
+  width: 16px;
+   }
 }
    
 /* 768 */
