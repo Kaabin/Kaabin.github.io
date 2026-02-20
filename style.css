@@ -238,12 +238,12 @@ h2 {
 
 /* Desktop adjustment */
 @media (min-width: 768px) {
-  .social-links img {
+  /*.social-links img {
     width: 16px;
     height: 16px;
     max-width: 16px;
    object-fit: contain;
-  }
+  }*/
    .social-links img[src*="instagram"] {
   width: 16px;
 }
@@ -256,7 +256,6 @@ h2 {
    }
 }
    
-/* 768 */
 
 /* =========================
    FOOTER
