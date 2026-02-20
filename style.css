@@ -26,10 +26,8 @@ p {
 .gradient-text {
   background: linear-gradient(90deg, #444, #888);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  
+  -webkit-text-fill-color: transparent;  
   text-align: center;
-
 }
 
 /* =========================
@@ -107,15 +105,14 @@ p {
     font-size: 2.2rem;
   }
 }
----------
-
-
 
 .subtitle {
   color: #555;
   margin-top: 10px;
   font-weight: 400;
 }
+}
+
 
 /* =========================
    SECTIONS
@@ -169,45 +166,7 @@ h2 {
   display: block;
   object-fit: cover;
 }
-   /* .video-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  /*padding: 40px;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px 0;
-}
 
-.video-card {
-  position: relative;
-  overflow: hidden;
-  border-radius: 16px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-  transition: transform 0.4s ease;
-}
-
-.video-card:hover {
-  transform: translateY(-10px);
-}
-
-.video-card iframe,
-.video-card video {
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 16/9;
-  object-fit: cover;
-}  */
-
-   
-/* .video-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px 0;
-}   */
 
 /*.video-item {
   background: #fff;
@@ -312,21 +271,7 @@ h2 {
 
    
    
- /*  .social-links img {
-  width: 20px;
-  height: 20px;
-  max-width: 20px;
-  /*object-fit: contain;*/
-} */
-
-/* Desktop adjustment */
-/* @media (min-width: 768px) {
-  .social-links img {
-    width: 16px;
-    height: 16px;
-    max-width: 16px;
-  }
-}   */
+ 
    
 
 /* =========================
@@ -344,6 +289,9 @@ footer {
    RESPONSIVE
 ========================= */
 
+/* =========================
+   RESPONSIVE
+========================= */
 @media (max-width: 768px) {
   .header-content {
     padding: 30px 25px;
