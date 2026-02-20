@@ -302,7 +302,7 @@ footer {
 }
 
 .social-links a:hover {
-  animation: heartbeat 0.6s ease;
+  animation: heartbeat 2.6s ease;
 }
 
 @keyframes heartbeat {
