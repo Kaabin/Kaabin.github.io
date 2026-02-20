@@ -237,20 +237,18 @@ h2 {
 .social-links img {
   width: 20px;
   height: 20px;
+  object-fit: contain;
 }
 
 /* Desktop adjustment */
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .social-links img {
     width: 16px;
     height: 16px;
   }
 }
    
-/*.social-links img {
-  width: 20px;
-  height: 20px;
-}*/
+/* 768 */
 
 /* =========================
    FOOTER
