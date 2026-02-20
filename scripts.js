@@ -2,14 +2,13 @@ const videos = document.querySelectorAll(".video-card video");
 
 videos.forEach(video => {
   video.parentElement.addEventListener("mouseenter", () => {
-    // Stop all other videos
+    // Stop other videos
     videos.forEach(v => {
       if (v !== video) {
         v.pause();
         v.currentTime = 0;
       }
     });
-    // Play hovered video
     video.play();
   });
 
