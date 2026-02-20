@@ -229,24 +229,12 @@ h2 {
 }
 
 /* Default (mobile first) */
-.social-links img[src*="instagram"] {
-  width: 16px;
-}
-   .social-links img[src*="applemusic"] {
-  width: 16px;
-   }
-
-   .social-links img[src*="soundcloud"] {
-  width: 16px;
-   }
-   
-   
-/* .social-links img {
+ .social-links img {
   width: 20px;
   height: 20px;
   max-width: 20px;
-  object-fit: contain;
-} */
+  /*object-fit: contain;*/
+} 
 
 /* Desktop adjustment */
 /* @media (min-width: 768px) {
@@ -254,19 +242,7 @@ h2 {
     width: 16px;
     height: 16px;
     max-width: 16px;
-   object-fit: contain;
   }
-   
-   .social-links img[src*="instagram"] {
-  width: 16px;
-}
-   .social-links img[src*="applemusic"] {
-  width: 16px;
-   }
-
-   .social-links img[src*="soundcloud"] {
-  width: 16px;
-   }
 }   */
    
 
