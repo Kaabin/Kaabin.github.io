@@ -294,21 +294,24 @@ footer {
 
 
 /* =========================
-   SOCIAL ICON HOVER EFFECT
+   SOCIAL ICON HEARTBEAT + HOLD
 ========================= */
 
-.social-links a {
-  transition: transform 0.3s ease;
+.social-links img {
+  transition: transform 0.2s ease;
 }
 
-.social-links a:hover {
-  animation: heartbeat 5.6s ease;
+/* When hovering */
+.social-links a:hover img {
+  animation: heartbeat 0.6s ease;
+  transform: scale(1.1); /* stays enlarged */
 }
 
+/* Heartbeat animation */
 @keyframes heartbeat {
   0%   { transform: scale(1); }
-  25%  { transform: scale(1.1); }
+  25%  { transform: scale(1.15); }
   50%  { transform: scale(0.95); }
-  75%  { transform: scale(1.05); }
-  100% { transform: scale(1); }
+  75%  { transform: scale(1.1); }
+  100% { transform: scale(1.15); }
 }
