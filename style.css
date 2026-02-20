@@ -209,10 +209,18 @@ h2 {
 }
 
 /* Social links — IMAGE BASED */
-.social-links {
+/*  .social-links {
   display: flex;
   justify-content: center;
   gap: 18px;
+  margin-top: 20px;
+}*/
+
+   .social-links {
+  display: flex;
+  flex-direction: column; /* STACKS vertically */
+  align-items: center;
+  gap: 12px; /* space between links */
   margin-top: 20px;
 }
 
@@ -225,10 +233,24 @@ h2 {
   font-weight: 500;
 }
 
+/* Default (mobile first) */
 .social-links img {
   width: 20px;
   height: 20px;
 }
+
+/* Desktop adjustment */
+@media (min-width: 768px) {
+  .social-links img {
+    width: 16px;
+    height: 16px;
+  }
+}
+   
+/*.social-links img {
+  width: 20px;
+  height: 20px;
+}*/
 
 /* =========================
    FOOTER
