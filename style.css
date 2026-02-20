@@ -46,7 +46,7 @@ p {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("images/header.jpeg"); /* Kaabin logo */
+  background-image: url("images/header.jpg"); /* Kaabin logo */
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 400px auto; /* larger than portrait */
