@@ -268,7 +268,25 @@ h2 {
 }
 
 
+/* =========================
+   SOCIAL ICON HOVER EFFECT
+========================= */
 
+.social-links a {
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+  animation: heartbeat 0.6s ease;
+}
+
+@keyframes heartbeat {
+  0%   { transform: scale(1); }
+  25%  { transform: scale(1.1); }
+  50%  { transform: scale(0.95); }
+  75%  { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
    
    
  
@@ -285,9 +303,6 @@ footer {
   color: #777;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
 
 /* =========================
    RESPONSIVE
