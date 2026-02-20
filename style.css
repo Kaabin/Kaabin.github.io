@@ -168,18 +168,7 @@ h2 {
 }
 
 
-/*.video-item {
-  background: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-}
 
-.video-item video,
-.video-item iframe {
-  width: 100%;
-  display: block;
-}  */
 
 .video-title {
   margin: 12px 0 6px;
@@ -268,25 +257,7 @@ h2 {
 }
 
 
-/* =========================
-   SOCIAL ICON HOVER EFFECT
-========================= */
 
-.social-links a {
-  transition: transform 0.3s ease;
-}
-
-.social-links a:hover {
-  animation: heartbeat 0.6s ease;
-}
-
-@keyframes heartbeat {
-  0%   { transform: scale(1); }
-  25%  { transform: scale(1.1); }
-  50%  { transform: scale(0.95); }
-  75%  { transform: scale(1.05); }
-  100% { transform: scale(1); }
-}
    
    
  
@@ -319,4 +290,25 @@ footer {
   .video-grid {
     gap: 20px;
   }
+}
+
+
+/* =========================
+   SOCIAL ICON HOVER EFFECT
+========================= */
+
+.social-links a {
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+  animation: heartbeat 0.6s ease;
+}
+
+@keyframes heartbeat {
+  0%   { transform: scale(1); }
+  25%  { transform: scale(1.1); }
+  50%  { transform: scale(0.95); }
+  75%  { transform: scale(1.05); }
+  100% { transform: scale(1); }
 }
